@@ -29,7 +29,7 @@ DOCUMENTS = [
 ]
 
 # Carrega modelo de embeddings
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
 
 # Carrega modelo de linguagem local via HuggingFace (Mistral ou Phi3 são bons)
 generator = pipeline("text-generation", model="microsoft/phi-1_5", max_new_tokens=300)
